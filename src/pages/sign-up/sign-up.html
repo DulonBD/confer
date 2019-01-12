@@ -1,0 +1,43 @@
+<ion-content padding>
+
+    <form #SignUpForm="ngForm" (ngSubmit)="onSignUp()" class="login-group">
+        
+        <div class="main-form">
+            <ion-item>
+                <ion-label floating>Full-Name</ion-label>
+                <ion-input type="text" name="fullName" ngModel required></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating>Student ID</ion-label>
+                <ion-input type="text" name="id" [(ngModel)]="signUpAcceptence.id" required></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="email" name="email" [(ngModel)]="signUpAcceptence.email" required></ion-input>
+            </ion-item>
+    
+            <ion-item >
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" name="password" [(ngModel)]="signUpAcceptence.password" required></ion-input>
+            </ion-item>
+    
+            <ion-item >
+                <ion-label floating>Confirm Password</ion-label>
+                <ion-input type="password" name="confirmPassword" ngModel required></ion-input>
+            </ion-item>
+            <button ion-button block type="submit"
+            [navPush]="signInPage" (click)="showLoading()">
+            <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </div>
+
+    </form>
+
+    <div class="block-msg" padding>
+        <span>Already have an account ?</span>
+        <span (click)="GoSignIn()">Sign in here</span>
+    </div>
+
+</ion-content>

@@ -1,0 +1,67 @@
+page-post{
+    .social-cards ion-col {
+        padding: 0;
+    }
+
+    // .pt{
+    //    padding: 0 16px 16px 16px;
+    // }
+
+    // ion-input{
+    //     border: 1px solid #8e9093;
+    //     height: 45px;
+    //     padding: 0 4px;
+    // }
+
+    // .comment-sec{
+    //     position: relative;
+    // }
+    // .comment-sec .add-on-btn{
+    //     position: absolute;
+    //     top: 14px;
+    //     right: 16px;
+    //     height: 46px;
+    //     width: 55px;
+    // }
+
+    .card-ios,
+    .card-md,
+    .card-wp {
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .card-content-ios {
+        padding-bottom: 0;
+    }
+
+    // .comment-sec  .comments {
+    //     padding: 0;
+    //     margin-top: 20px;
+    // }
+
+    // .comment-item p{
+    //     padding: 0;
+    //     margin: 0 0 10px 50px;
+    //     text-transform: capitalize;
+    // }
+
+    .desc-content li {
+        display: block;
+        text-decoration: none;
+        color: #999;
+        padding: 5px 0;
+      }
+
+      .tags {
+        background: #ff8248 none repeat scroll 0 0;
+        border-radius: 0;
+        display: inline-block;
+        font-size: 13px;
+        color: #fff !important;
+        margin: 4px 0 0;
+        margin-right: 2px;
+        padding: 2px 5px;
+    }
+}

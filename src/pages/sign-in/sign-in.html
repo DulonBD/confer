@@ -1,0 +1,32 @@
+<ion-content padding>
+
+    <form #signinForm="ngForm" (ngSubmit)="onSignIn()" class="login-group">
+        <div class="main-form">
+            <ion-item>
+                <ion-label floating>Username</ion-label>
+                <ion-input type="text" name="userName" [(ngModel)]="signinAcceptence.userName" required></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating>Student ID</ion-label>
+                <ion-input type="text" name="id" [(ngModel)]="signinAcceptence.id" required></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" name="password" [(ngModel)]="signinAcceptence.password" required></ion-input>
+            </ion-item>
+            <button ion-button block type="submit"
+            [navPush]="tabsPage" 
+            (click)="showLoading()" class="login-button">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </div>
+    </form>
+
+    <div class="block-msg" padding>
+        <span>new user ?</span>
+        <span [navPush]="signUpPage">create new account</span>
+    </div>
+
+</ion-content>
