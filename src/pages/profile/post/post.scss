@@ -1,7 +1,12 @@
 page-post{
     .social-cards ion-col {
-        padding: 0;
     }
+    // .toolbar-background-ios,
+    // .toolbar-background-md{
+    //     background: #0f0c29;
+    //     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    //     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    // }
 
     // .pt{
     //    padding: 0 16px 16px 16px;
@@ -24,17 +29,25 @@ page-post{
     //     width: 55px;
     // }
 
-    .card-ios,
-    .card-md,
-    .card-wp {
-        margin: 0;
-        border-radius: 0;
-        width: 100%;
+    .card-content-ios,
+    .card-content-md ,
+    .card-content-wp {
+        background: #f2f2f2;
+        margin: 5px 15px;
+        border-radius: 15px;
+        background-color:  rgba(250, 188, 9, 0.1);
     }
 
-    .card-content-ios {
-        padding-bottom: 0;
-    }
+    // .comment-sec  .comments {
+    //     padding: 0;
+    //     margin-top: 20px;
+    // }
+
+    // .comment-item p{
+    //     padding: 0;
+    //     margin: 0 0 10px 50px;
+    //     text-transform: capitalize;
+    // }
 
     // .comment-sec  .comments {
     //     padding: 0;

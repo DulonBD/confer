@@ -3,12 +3,21 @@ page-sign-up{
     .content-md,
     .content-ios{
         background: #f2f2f2!important;
-        background: linear-gradient(-45deg, #ff8248 33%, transparent 120%), 
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%) !important;
+        background: linear-gradient(-45deg, #ff661a 50%, transparent 33%), 
+        linear-gradient(-45deg, #ff8248 100%, transparent 120%) !important;
     }
 
-    .mt-10{
-        margin-top: 10px;
+    .mt-30{
+        margin-top: 30px;
+    }
+
+    .logo-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+        margin-top: calc(100% - 95%);
     }
 
     .block-msg{
@@ -39,7 +48,7 @@ page-sign-up{
 
     form{
         width: calc(100% - 20px);
-        margin-top: calc(100% - 60%);
+        // margin-top: calc(100% - 60%);
     }
 
     .main-form{
@@ -73,7 +82,7 @@ page-sign-up{
         width: 60px;
         height: 60px;
         margin-top: -32px;
-        border: 8px solid rgba($color: #512DA8, $alpha: 0.1);
+        border: 8px solid #ff661a;
         border-radius: 50%;
         transition: all ease-in-out 500ms;
         box-shadow: none !important;

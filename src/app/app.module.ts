@@ -26,6 +26,7 @@ import { SearchServicePage } from '../services/search-service';
 import { SearchPage } from '../pages/search/search';
 import { ProfileShowServicePage } from '../services/proShow-service';
 import { ProfileShowPage } from '../pages/profile/profile-show/profile-show';
+import { PostServicePage } from '../services/post-service';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { ProfileShowPage } from '../pages/profile/profile-show/profile-show';
     SingleQueryServicePage,
     ProfileServicePage,
     ProfileShowServicePage,
+    PostServicePage,
     SearchServicePage
 
   ]

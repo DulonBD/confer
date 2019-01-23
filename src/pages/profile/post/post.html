@@ -6,90 +6,78 @@
     
 <ion-content>
         
-    <ion-card class="cards-bg social-cards">
+    <ion-card class="cards-bg social-cards" *ngFor="let post of posts">
         <ion-item>
-            <ion-avatar item-start>
-                <img src="../../assets/imgs/user-img/client-03.jpg">
-            </ion-avatar>
-            <h2>Dulon</h2>
-            <p>10-05-2018</p>
-        </ion-item>
-        <ion-card-content>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Expedita quod tenetur dolor facilis aut consequuntur atque nesciunt,</p>
-        </ion-card-content>
 
-        <ion-row>
-            <ion-col>
-                <ul class="desc-content">
-                    <li>
-                        <span class="tags">HTML5</span>
-                        <span class="tags">CSS3</span>
-                        <span class="tags">JS</span>
-                    </li>
-                </ul>
-            </ion-col>
-        </ion-row>
+            <ion-avatar item-start>
+                <img src="../../assets/imgs/{{post.image}}.png">
+            </ion-avatar>
+            <h2 (click)="goToProfile()">
+                {{post.name}}
+            </h2>
+            <ion-note>
+                {{post.time}} ago
+            </ion-note>
+            <!-- <p>{{post.date.month}} {{post.date.day}}, {{post.date.year}}</p> -->
+            
+        </ion-item>
+        <hr>
         
+        <ion-card-content>
+            <ul>
+                <li>
+                    <p>{{post.post}}</p>
+                    <img src="../../assets/imgs/{{post.postimg}}.jpg" alt="">
+                </li>
+            </ul>
+            <ion-row class="desc-content">
+                <ion-col>
+                    <ul>
+                        <li>
+                            <span class="tags" *ngFor="let tag of post.tags">{{ tag }}</span>
+                        </li>
+                    </ul>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
         <ion-row>
+
             <ion-col>
-                <button ion-button color="primary" clear small icon-start>
-                    48 Helpfull
+                <button  ion-button clear small icon-start>
+                    <ion-icon name='thumbs-up'></ion-icon>
+                    {{post.helpfull}} Helpfull
                 </button>
-                <button ion-button color="primary" clear small icon-start>
-                    78 Answers
+                <button ion-button clear small icon-start>
+                <ion-icon name='text'></ion-icon>
+                    {{post.answer}} Answers
                 </button>
             </ion-col>
-            <ion-col align-self-center text-right padding>
-                <ion-note>
-                    5h ago
-                </ion-note>
-            </ion-col>
+            
         </ion-row>
+
+        <!-- <div class="comment-sec pt">
+            <ion-list>
+                <ion-input type="text" value="" placeholder="Add a answer"></ion-input>
+            </ion-list>
+            <button class="add-on-btn"> Add </button>
+            <div class="comments">
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="../../assets/imgs/user-img/client-03.jpg">
+                    </ion-avatar>
+                    <h2>{{query.name}}</h2>
+                    <p>{{query.date.month}} {{query.date.day}}, {{query.date.year}}</p>
+                </ion-item>
+                <div class="comment-item">
+                    <p>{{query.postComment}}</p>
+                    <a [navPush]="singleQueryPage" [navParams]="query">
+                        View all
+                    </a>
+                </div>
+            </div>
+        </div> -->
 
     </ion-card>
     <br>
-
-    <!-- <ion-card class="cards-bg social-cards">
-        <ion-item>
-            <ion-avatar item-start>
-                <img src="../../assets/imgs/user-img/client-03.jpg">
-            </ion-avatar>
-            <h2>Azharul</h2>
-            <p>10-2-2018</p>
-        </ion-item>
-        <ion-card-content>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </ion-card-content>
-
-        <ion-row>
-            <ion-col>
-                <ul class="desc-content">
-                    <li>
-                        <span class="tags">HTML5</span>
-                        <span class="tags">CSS3</span>
-                        <span class="tags">JS</span>
-                    </li>
-                </ul>
-            </ion-col>
-        </ion-row>
-
-        <ion-row>
-            <ion-col>
-                <button ion-button color="primary" clear small icon-start>
-                    {{query.helpfull}} Helpfull
-                </button>
-                <button ion-button color="primary" clear small icon-start>
-                    {{query.answer}} Answers
-                </button>
-            </ion-col>
-            <ion-col align-self-center text-right padding>
-                <ion-note>
-                    {{query.time}}h ago
-                </ion-note>
-            </ion-col>
-        </ion-row>
-
-    </ion-card> -->
     
 </ion-content>
