@@ -2,15 +2,16 @@ page-sign-in{
 
     .content-md,
     .content-ios{
-        background-color: #f2f2f2 !important;
+        background: #CBDAF3 !important;
+        // background-color: #f2f2f2 !important;
         // -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
         // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
         // -webkit-transition: background-color 200ms ease;
         // transition: background-color 200ms ease;
         // background: linear-gradient(-45deg, #ff8248 55%, transparent 150%), 
         // linear-gradient(-45deg, #512DA8 55%, transparent 40%) !important;
-        background: linear-gradient(-45deg, #ff8248 33%, transparent 120%), 
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%) !important;
+        // background: linear-gradient(-45deg, #ff8248 33%, transparent 120%), 
+        // linear-gradient(-45deg, #512DA8 100%, transparent 33%) !important;
     }
 
     .mt-100{
@@ -30,12 +31,13 @@ page-sign-in{
         margin-top: calc(100% - 80%);
     }
     .block-msg{
+        padding-top: 25px;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .block-msg span:nth-last-child(1){
-        color: #fff;
+        color: #1c768f;
         cursor: pointer;
     }
 
@@ -85,7 +87,9 @@ page-sign-in{
         background: #ffffff;
         color: #999999;
         border-radius: 12px;
-        padding: 10px 20px;       
+        padding: 10px 20px;
+        padding-bottom: 40px; 
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);     
     }
 
     .form-group {
@@ -99,12 +103,12 @@ page-sign-in{
     .button-ios {
         position: absolute;
         right: -50px;
-        top: 50%;
+        top: 68%;
         padding: 11px 0;
         width: 60px;
         height: 60px;
         margin-top: -32px;
-        border: 8px solid rgba($color: #512DA8, $alpha: 0.1);
+        border: 8px solid #CBDAF3;
         border-radius: 50%;
         transition: all ease-in-out 500ms;
         box-shadow: none !important;

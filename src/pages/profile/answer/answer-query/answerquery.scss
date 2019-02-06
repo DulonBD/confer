@@ -1,4 +1,4 @@
-page-single-query{
+page-answer-query{
     .social-cards ion-col {
         padding: 0;
     }
@@ -18,8 +18,6 @@ page-single-query{
         right: 16px;
         height: 46px;
         width: 55px;
-        background: #163871;
-        color: #fff;
     }
 
     .card-content-ios,
@@ -28,28 +26,17 @@ page-single-query{
         background: #f2f2f2;
         margin: 5px 15px;
         border-radius: 15px;
-        background-color:  #ccdaf3;
+        background-color:  rgba(250, 188, 9, 0.1);
     }
 
     .comment-sec  .comments {
         padding: 0;
-        // margin-top: 20px;
+        margin-top: 20px;
     }
 
     .comment-item{
         padding: 0;
-        margin: 0 0 5px 70px;
+        margin: 0 0 5px 50px;
         text-transform: capitalize;
     }
-
-    .tags {
-        background:#163871;
-        border-radius: 0;
-        display: inline-block;
-        font-size: 13px;
-        color: #fff !important;
-        margin: 4px 0 0;
-        margin-right: 2px;
-        padding: 2px 5px;
-      }
 }

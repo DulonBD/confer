@@ -12,6 +12,9 @@
             <ion-avatar item-start>
                 <img src="../../assets/imgs/{{post.image}}.png">
             </ion-avatar>
+            <ion-note  class="dlt-note" float-right color="primary">
+                <ion-icon name="trash"></ion-icon>
+            </ion-note>
             <h2 (click)="goToProfile()">
                 {{post.name}}
             </h2>
@@ -43,6 +46,7 @@
         <ion-row>
 
             <ion-col>
+                <hr>
                 <button  ion-button clear small icon-start>
                     <ion-icon name='thumbs-up'></ion-icon>
                     {{post.helpfull}} Helpfull

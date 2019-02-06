@@ -9,6 +9,7 @@ page-search {
         border: none;
         border-bottom: 1px solid #999 !important;
         box-shadow: none;
+        padding: 0;
     }
 
     .list-md > .item-block:last-child, .list-md > .item-wrapper:last-child .item-block {
@@ -21,5 +22,13 @@ page-search {
 
     .list-md {
         margin: 0;
+    }
+
+    ion-item p{
+        padding-top: 10px;
+    }
+
+    .searchbar-md .searchbar-search-icon {
+        display: none !important;
     }
 }

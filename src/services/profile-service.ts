@@ -1,7 +1,7 @@
 export class ProfileServicePage {
     profiles = {
         name:'Dulon',
-        image:'10',
+        image:'avatar-1',
         shortDesc:'I,m a font end developer',
         postTotal: 47,
         friendsTotal: 245,

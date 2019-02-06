@@ -27,6 +27,8 @@ import { SearchPage } from '../pages/search/search';
 import { ProfileShowServicePage } from '../services/proShow-service';
 import { ProfileShowPage } from '../pages/profile/profile-show/profile-show';
 import { PostServicePage } from '../services/post-service';
+import { AnswerQueryPage } from '../pages/profile/answer/answer-query/answerquery';
+import { AnsQueryServicePage } from '../services/ansQuery-service';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { PostServicePage } from '../services/post-service';
     ProfileShowPage,
     PostPage,
     AnswerPage,
+    AnswerQueryPage,
     ProfileEditPage,
     HeaderPage,
     SingleQueryPage,
@@ -61,6 +64,7 @@ import { PostServicePage } from '../services/post-service';
     ProfilePage,
     PostPage,
     AnswerPage,
+    AnswerQueryPage,
     ProfileEditPage,
     ProfileShowPage,
     HeaderPage,
@@ -80,6 +84,7 @@ import { PostServicePage } from '../services/post-service';
     ProfileServicePage,
     ProfileShowServicePage,
     PostServicePage,
+    AnsQueryServicePage,
     SearchServicePage
 
   ]

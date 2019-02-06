@@ -2,9 +2,10 @@ page-sign-up{
 
     .content-md,
     .content-ios{
-        background: #f2f2f2!important;
-        background: linear-gradient(-45deg, #ff661a 50%, transparent 33%), 
-        linear-gradient(-45deg, #ff8248 100%, transparent 120%) !important;
+        background: #cbdaf3 !important;
+        // background: #f2f2f2!important;
+        // background: linear-gradient(-45deg, #ff661a 50%, transparent 33%), 
+        // linear-gradient(-45deg, #ff8248 100%, transparent 120%) !important;
     }
 
     .mt-30{
@@ -21,12 +22,13 @@ page-sign-up{
     }
 
     .block-msg{
+        padding-top: 25px;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .block-msg span:nth-last-child(1){
-        color: #f2f2f2;
+        color: #1c768f;
         cursor: pointer;
     }
 
@@ -64,6 +66,8 @@ page-sign-up{
         color: #999999;
         border-radius: 12px;
         padding: 10px 20px;
+        padding-bottom: 40px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
     }
 
     .form-group {
@@ -77,12 +81,12 @@ page-sign-up{
     .button-ios {
         position: absolute;
         right: -50px;
-        top: 50%;
+        top: 60%;
         padding: 11px 0;
         width: 60px;
         height: 60px;
         margin-top: -32px;
-        border: 8px solid #ff661a;
+        border: 8px solid #CBDAF3;
         border-radius: 50%;
         transition: all ease-in-out 500ms;
         box-shadow: none !important;

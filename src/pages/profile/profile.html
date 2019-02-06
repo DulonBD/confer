@@ -12,20 +12,25 @@
         <div class="rela-block profile-card">
             <div class="rela-block1">
                 <div class="profile-pic">
-                    <img src="../../assets/imgs/user-img/client-03.jpg" alt="">
+                    <img src="../../assets/imgs/{{profile.image}}.png" alt="">
+                </div>
+                <div class="profile-edit">
+                    <ion-icon name="create">
+                        <ion-input type="file" style="opacity:0 !important;"></ion-input>
+                    </ion-icon>
                 </div>
                 <div class=" profile-name-container">
                     <ion-row>
                         <ion-col col-12>
                             <div class="rela-block user-name">
-                                <ion-icon name="arrow-back"></ion-icon>
+                                <!-- <ion-icon name="arrow-back"></ion-icon> -->
                                 {{profile.name}}
-                                <ion-icon name="arrow-forward"></ion-icon>
+                                <!-- <ion-icon name="arrow-forward"></ion-icon> -->
                             </div>
                         </ion-col>
                         <ion-col col-12>
                             <div class="rela-block user-desc">
-                               {{profile.shortDesc}}
+                               "{{profile.shortDesc}}"
                             </div>
                         </ion-col>
                     </ion-row>
@@ -36,14 +41,12 @@
                         <ion-col>
                             <div class="post" (click)="goToPost()">
                                 {{ profile.postTotal }}
-                                <br>
                                 <p>post</p>
                             </div>
                         </ion-col>
                         <ion-col>
                             <div class="answers" (click)="goToAnswer()">
                                 {{profile.answersTotal}}
-                                <br>
                                 <p>answers</p>
                             </div>
                         </ion-col>
@@ -55,7 +58,7 @@
                 <div class="desc-title">
                     <h4>About</h4>
                 </div>
-                <ul class="desc-content">
+                <ul class="desc-content ml-15">
                     <li>
                     <span>Deratment :</span> {{profile.depertment}}</li>
                     <li>
@@ -75,7 +78,7 @@
                     <li>
                         <span class="tags" *ngFor="let tag of profile.tags">{{tag}}</span>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" (click)="openModal()">
                             <ion-icon name="brush"></ion-icon>Edit-Profile
                         </a>
@@ -84,8 +87,21 @@
                         <a href="#">
                             <ion-icon name="log-out"></ion-icon>Logout
                         </a>
-                    </li>
+                    </li> -->
                 </ul><!-- desc-content -->
+                <ion-row>
+                    <ion-col>
+                        <div class="ml-35">
+                            <button ion-button small icon-start (click)="openModal()"
+                            style="background: #f5f4fa; color: #163871">
+                                <ion-icon name="brush"></ion-icon>Edit-Profile
+                            </button>
+                            <button ion-button small icon-start style="background: #f5f4fa; color: #163871">
+                                <ion-icon name="log-out"></ion-icon>Logout
+                            </button>
+                        </div>
+                    </ion-col>
+                </ion-row>
             </div>
         </div><!-- profile-card -->
     </div><!-- rela-block -->

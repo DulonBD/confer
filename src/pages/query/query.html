@@ -43,6 +43,7 @@
         <ion-row>
 
             <ion-col>
+                <hr>
                 <button  ion-button clear small icon-start>
                     <ion-icon name='thumbs-up'></ion-icon>
                     {{query.helpfull}} Helpfull
@@ -56,28 +57,7 @@
             </ion-col>
             
         </ion-row>
-
-        <!-- <div class="comment-sec pt">
-            <ion-list>
-                <ion-input type="text" value="" placeholder="Add a answer"></ion-input>
-            </ion-list>
-            <button class="add-on-btn"> Add </button>
-            <div class="comments">
-                <ion-item>
-                    <ion-avatar item-start>
-                        <img src="../../assets/imgs/user-img/client-03.jpg">
-                    </ion-avatar>
-                    <h2>{{query.name}}</h2>
-                    <p>{{query.date.month}} {{query.date.day}}, {{query.date.year}}</p>
-                </ion-item>
-                <div class="comment-item">
-                    <p>{{query.postComment}}</p>
-                    <a [navPush]="singleQueryPage" [navParams]="query">
-                        View all
-                    </a>
-                </div>
-            </div>
-        </div> -->
+        
 
     </ion-card>
 
@@ -86,32 +66,32 @@
             <ion-icon name="add"></ion-icon>
         </button>
         <ion-fab-list  side="top">
-                <div>
-                    <ion-textarea placeholder="add your question?"></ion-textarea>
-                    <br>
-                    <ion-input type="file" placeholder="add image"></ion-input>
-                    <br>
-                    <ion-input placeholder="topics"></ion-input>
-                    <br>
+            <div>
+                <ion-textarea placeholder="add your question?"></ion-textarea>
+                <br>
+                <ion-input type="file" placeholder="add image"></ion-input>
+                <br>
+                <ion-input placeholder="topics"></ion-input>
+                <br>
+                <button ion-button>Add</button>
+            </div>
+            <!-- <ion-item>
+                <ion-row>
+                    <ion-col>
+                        <h4>Have any problem ?</h4>
+                        <h4>Tell others</h4>
+                    </ion-col>
+                </ion-row>
+            </ion-item> -->
+            <!-- <ion-item>
+                <ion-textarea placeholder="Add your question?"></ion-textarea>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Topics"></ion-input>
+            </ion-item>
+            <ion-item>
                     <button ion-button>Add</button>
-                </div>
-                <!-- <ion-item>
-                    <ion-row>
-                        <ion-col>
-                            <h4>Have any problem ?</h4>
-                            <h4>Tell others</h4>
-                        </ion-col>
-                    </ion-row>
-                </ion-item> -->
-                <!-- <ion-item>
-                    <ion-textarea placeholder="Add your question?"></ion-textarea>
-                </ion-item>
-                <ion-item>
-                    <ion-input placeholder="Topics"></ion-input>
-                </ion-item>
-                <ion-item>
-                        <button ion-button>Add</button>
-                </ion-item> -->
+            </ion-item> -->
         </ion-fab-list>
     </ion-fab>
     

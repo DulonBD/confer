@@ -8,7 +8,7 @@ import { NotificationPage } from "../notification/notification";
     template: `
         <ion-tabs>
             <ion-tab [root]="queryPage" tabIcon="home"></ion-tab>
-            <ion-tab [root]="notificationPage" tabIcon="notifications"></ion-tab>
+            <ion-tab [root]="notificationPage" tabIcon="notifications"  tabBadge="1"></ion-tab>
             <ion-tab [root]="profilePage" tabIcon="contact"></ion-tab>
         </ion-tabs>
     `,

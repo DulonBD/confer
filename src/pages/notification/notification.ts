@@ -56,7 +56,7 @@ import { Component } from "@angular/core";
     `,
     styles: [`
         ion-list-header{
-           color: #ff8248;
+           color: #163871;
         }
 
         .list-header-md {
