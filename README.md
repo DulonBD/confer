@@ -1,7 +1,7 @@
 # Ionic Angular Blogging Mobile Application
 This application is purely a demo of the Ionic Framework and Angular.
 
-## Getting Started
+## Installation & Development
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
 * Clone this repository: `git clone https://github.com/DulonBD/Confer.git`.
